@@ -1,16 +1,22 @@
-## Hi there 👋
+# About Me
+👋 Hi there! I'm Emilio, ...
 
-<!--
-**e-mar404/e-mar404** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 🔭 Currently working on:
 
-Here are some ideas to get you started:
+- System Administrator @ Beta Academy
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🌱 Learning & Growing:
+
+
+## 👯 Collaborating on:
+
+
+## 💬 Ask me about:
+
+
+## 📫 How to reach me:
+
+- Email: egmarinn@gmail.com
+- LinkedIn: [@emiliomarin](https://www.linkedin.com/in/emilio-marin-8393a51bb/)
+
+## ⚡ Fun fact:
