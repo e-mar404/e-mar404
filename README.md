@@ -5,9 +5,13 @@
 ## 🔭 Currently working on:
 
 - System Administrator @ [Beta Academy](https://www.betaacademy.org/)
+- http server in go
+- Ricing personal neovim config and getting ready to use it fulltime
+
+## 📝 Planned Projects:
+
 - Music player, now playing for terminal or maybe neovim (idea, really wanting to do something with music and the terminal)
 - Vinyl Viewer (idea, starting with the api/backend soon)
-- Rising personal neovim config and getting ready to use it fulltime
 
 ## 🌱 Learning & Growing:
 
@@ -18,10 +22,10 @@
 
 ## Reading 
 
-### Currently Reading
+### 📚 Currently Reading
 - [Filterworld: How Algorithms Flattened Culture](https://www.amazon.com/Filterworld-How-Algorithms-Flattened-Culture/dp/0385548281)
 
-### Planned Reading
+### 📖 Planned Reading
 - [The Pragmatic Programmer](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X)
 
 ## 📫 How to reach me:
