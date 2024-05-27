@@ -5,7 +5,7 @@
 ## 🔭 Currently working on:
 
 - System Administrator @ [Beta Academy](https://www.betaacademy.org/)
-- http server in go
+- personal site/blog with hmtx and go 
 - Ricing personal neovim config and getting ready to use it fulltime
 
 ## 📝 Planned Projects:
