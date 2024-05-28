@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 15vw;
+  background-color: #014D4E;
+  position: fixed;
+  bottom: 0vw;
+  left: 0vw;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  max-width: 70vw;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+  fill: #f7e7ce;
+}
