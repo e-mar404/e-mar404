@@ -1,4 +1,4 @@
-.footer {
+#footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,7 +6,7 @@
   height: 15%;
 }
 
-.social-links {
+#socials {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,8 +17,14 @@
   padding: 0;
 }
 
-.social-links > li {
+.social-link:link, .social-link:visited {
+  text-decoration: none;
   padding: 10px 10px 0px 10px;
+  color: #7067CF;
+}
+
+.social-link:active {
+  color: #351E29;
 }
 
 hr {

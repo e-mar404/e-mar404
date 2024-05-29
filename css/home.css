@@ -1,17 +1,17 @@
-#root {
-  width: 80vw;
-  min-width: 350px;
-  height: fit-content;
+#about-me {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
-body {
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
+#about-me-text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  color: #466362;
-  font-family: 'Courier New', Courier, monospace;
+}
+
+#profile-pic {
+  width: 50%;
+  height: 50%;
+  max-width: 500px;
+  max-height: 500px;
 }

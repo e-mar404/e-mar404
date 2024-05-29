@@ -1,4 +1,4 @@
-.navbar {
+#navbar {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -7,7 +7,7 @@
   height: 15%;
 }
 
-.pages {
+#pages {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -18,12 +18,17 @@
   padding: 0;
 }
 
-a:link {
+.page-link:link, .page-link:visited {
   text-decoration: none;
+}
+
+.page-link:active {
+  color: #351E29;
 }
 
 .page-link, .separator {
   font-size: 1.5em;
+  color: #466362;
 }
 
 @media (max-width: 650px) {

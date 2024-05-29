@@ -22,26 +22,17 @@ func NewTemplate() *Templates {
   }
 }
 
-type PageData struct {
-}
-
-func NewPageData () PageData {
-  return PageData {
-  }
-}
-
 func main() {
   e := echo.New()
   e.Use(middleware.Logger())
+
   e.Static("/css", "css")
   e.Static("/images", "images")
-
-  page := NewPageData()
 
   e.Renderer = NewTemplate() 
 
   e.GET("/", func (c echo.Context) error {
-    return c.Render(200, "home", page)
+    return c.NoContent(200)
   })
 
   e.Logger.Fatal(e.Start(":6969"))

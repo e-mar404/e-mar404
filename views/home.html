@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="css/index.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
@@ -19,6 +20,7 @@
   </head>
 
   <body>
+    <--! TODO: look at oob to update root -->
     <div id="root">
       {{ template "navbar" . }}  
       
@@ -31,9 +33,17 @@
 {{ end }}
 
 {{ block "about-me" . }}
-  <div class="about-me">
-    <h2>Hello, my name is Emilio Marin</h2>
+  <div id="about-me">
+    <div id="about-me-text">
+      <h2>Hello, my name is Emilio Marin</h2>
 
-    <p>I am an aspiring software developer studying Computer Science at the University of Houston. I have a strong commitment to continous self-improvement and genuine enthusiasm for acquiring fresh knowledge and skills.</p>
+      <p>
+        Write something about my self in here, idk what maybe something like:
+        "this dude right here -&gt is the funiest person ever and he will work 
+        very hard @ your company so pls hire him"
+      </p>
+    </div>
+
+    <img id="profile-pic" src="/images/me.jpg" alr="loading" /> 
   </div>
 {{ end }}
