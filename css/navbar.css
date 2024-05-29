@@ -1,3 +1,40 @@
-.init {
-  color: blue;
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  min-width: 350px;
+  height: 15%;
+}
+
+.pages {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.page-link, .separator {
+  color: #466362;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+}
+
+@media (max-width: 650px) {
+  .page-link, .separator{
+    font-size: 1em;
+  }
+}
+
+hr {
+  width: 100%
 }

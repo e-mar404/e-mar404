@@ -41,7 +41,7 @@ func main() {
   e.Renderer = NewTemplate() 
 
   e.GET("/", func (c echo.Context) error {
-    return c.Render(200, "index", page)
+    return c.Render(200, "home", page)
   })
 
   e.Logger.Fatal(e.Start(":6969"))

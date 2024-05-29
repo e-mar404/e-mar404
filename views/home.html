@@ -1,4 +1,4 @@
-{{ block "index" . }}
+{{ block "home" . }}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,16 +7,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
 
     <script 
       src="https://unpkg.com/htmx.org@1.9.12" 
       integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" 
-      crossorigin="anonymous">
-    </script>
-    <script 
-      src="https://kit.fontawesome.com/2eaf7acd63.js" 
       crossorigin="anonymous">
     </script>
   </head>
@@ -25,8 +22,18 @@
     <div id="root">
       {{ template "navbar" . }}  
       
+      {{ template "about-me" . }}
+
       {{ template "footer" . }}
     </div>
   </body>
 </html>
+{{ end }}
+
+{{ block "about-me" . }}
+  <div class="about-me">
+    <h2>Hello, my name is Emilio Marin</h2>
+
+    <p>I am an aspiring software developer studying Computer Science at the University of Houston. I have a strong commitment to continous self-improvement and genuine enthusiasm for acquiring fresh knowledge and skills.</p>
+  </div>
 {{ end }}
