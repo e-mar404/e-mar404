@@ -2,6 +2,7 @@ package main
 
 import (
 	"io"
+	"os"
 	"text/template"
 
 	"github.com/labstack/echo/v4"
@@ -45,5 +46,5 @@ func main() {
     return c.Render(200, "home", page)
   })
 
-  e.Logger.Fatal(e.Start(":6969"))
+  e.Logger.Fatal(e.Start(":" + os.Getenv("PORT")))
 }
