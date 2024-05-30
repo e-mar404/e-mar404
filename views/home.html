@@ -1,0 +1,51 @@
+{{ block "home" . }}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Emilio Marin</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+
+    <script 
+      src="https://unpkg.com/htmx.org@1.9.12" 
+      integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" 
+      crossorigin="anonymous">
+    </script>
+  </head>
+
+  <body>
+    <!-- TODO: look at oob to update root -->
+    <div id="root">
+      {{ template "navbar" . }}  
+      
+      {{ template "about-me" . }}
+
+      {{ template "footer" . }}
+    </div>
+  </body>
+</html>
+{{ end }}
+
+{{ block "about-me" . }}
+  <div id="about-me">
+    <div id="about-me-text">
+      <h2>Hello, my name is Emilio Marin</h2>
+
+      <p> 
+      I'm a senior at the University of Houston majoring in Computer Science. As I am always on a quest for knowledge I started diving into HTMX, Go, and Neovim (btw). If you're curious about my current projects, check out my GitHub at the bottom of the page. I'm always open for a conversation, best way to reach me is with my email at the bottom of the page.
+      </p>
+
+      <p>
+       Some of my other hoobies include reading and a soon to be blog where I'll be talking about am my work, tech rants, and other programming musings. You can find my Goodreads and Medium profiles linked above. 
+      </p>
+    </div>
+
+    <img id="profile-pic" src="/images/me.jpg" alr="loading" /> 
+  </div>
+{{ end }}

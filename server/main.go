@@ -2,6 +2,7 @@ package main
 
 import (
 	"io"
+	"os"
 	"text/template"
 
 	"github.com/labstack/echo/v4"
@@ -25,7 +26,7 @@ func NewTemplate() *Templates {
 type PageData struct {
 }
 
-func NewPageData () PageData {
+func NewPageData() PageData {
   return PageData {
   }
 }
@@ -33,15 +34,17 @@ func NewPageData () PageData {
 func main() {
   e := echo.New()
   e.Use(middleware.Logger())
-  e.Static("/css", "css")
 
-  page := NewPageData()
+  e.Static("/css", "css")
+  e.Static("/images", "images")
 
   e.Renderer = NewTemplate() 
 
+  page := NewPageData()
+
   e.GET("/", func (c echo.Context) error {
-    return c.Render(200, "index", page)
+    return c.Render(200, "home", page)
   })
 
-  e.Logger.Fatal(e.Start(":6969"))
+  e.Logger.Fatal(e.Start(":" + os.Getenv("PORT")))
 }

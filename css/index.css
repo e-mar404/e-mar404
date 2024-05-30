@@ -1,3 +1,18 @@
-.init {
-  color: blue;
+#root {
+  width: 80vw;
+  min-width: 350px;
+  max-width: 1000px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: #F2F4F3;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
 }
