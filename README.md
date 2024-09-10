@@ -6,24 +6,23 @@
 
 - System Administrator @ [Beta Academy](https://www.betaacademy.org/)
 - personal site/blog with hmtx and go 
-- Ricing personal neovim config and getting ready to use it fulltime
+- Neovim plugin that shows program output in a floating window ([tooltip.nvim](http://github.com/e-mar404/tooltip.nvim))
 
 ## 📝 Planned Projects:
 
-- Music player, now playing for terminal or maybe neovim (idea, really wanting to do something with music and the terminal)
-- Vinyl Viewer (idea, starting with the api/backend soon)
+- tooltip on neovim for viewing standard output and standard errors of any program
 
 ## 🌱 Learning & Growing:
 
-- Learning to use neovim ... (soon it'll be "i use neovim btw").
-- Go & swift are on my radar for languages to learn
-- During summer I'll be reading books on computer science, programming or anything in that realm
+- Learning more about neovim everyday
+- Go & erlang are on my radar for languages to learn
 - Brushing up on Algorithims & Data Structures
+- Taking Programming Languages / Paradigms and Artificial Intelligence classes @ UH
 
 ## Reading 
 
 ### 📚 Currently Reading
-- [Filterworld: How Algorithms Flattened Culture](https://www.amazon.com/Filterworld-How-Algorithms-Flattened-Culture/dp/0385548281)
+- [Sputnik Sweetheart](https://www.amazon.com/Sputnik-Sweetheart-Novel-Haruki-Murakami/dp/0375726055)
 
 ### 📖 Planned Reading
 - [The Pragmatic Programmer](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X)
