@@ -26,37 +26,44 @@ func NewTemplate() *Templates {
   }
 }
 
-type PageData struct {
-}
-
-func NewPageData() PageData {
-  return PageData {
-  }
-}
-
 func main() {
   e := echo.New()
   e.Use(middleware.Logger())
 
   e.Static("/css", "css")
   e.Static("/images", "images")
-  e.Static("blog", "blog")
+  e.Static("/blog", "blog")
 
   e.Renderer = NewTemplate() 
 
-  page := NewPageData()
-
   e.GET("/", func (c echo.Context) error {
-    return c.Render(200, "home", page)
+    return c.Render(200, "home", nil)
   })
 
-  e.GET("/blog", func (c echo.Context) error {
-    html, err := blog.BlogHtml()
+  e.GET("/blogs", func (c echo.Context) error {
+    blogList, err := blog.BlogList()
     if err != nil {
-      log.Fatal(err)
+      log.Print(err)
+
+      return c.Render(400, "blog-list", "something went wrong")
     }
 
-    return c.Render(200, "blog", string(html)) 
+    return c.Render(200, "blog-list", blogList) 
+  })
+
+  e.GET("/blogs/:blog-id", func (c echo.Context) error {
+    file := c.Param("blog-id")
+    
+    log.Print(file)
+
+    html, err := blog.BlogHtml(file)
+    if err != nil {
+      log.Print(err)
+
+      return c.Render(400, "blog-view", "something went wrong")
+    }
+
+    return c.Render(200, "blog-view", string(html))
   })
 
   port := ":42069"

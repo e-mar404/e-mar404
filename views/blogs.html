@@ -1,4 +1,4 @@
-{{ block "blog-view" . }}
+{{ block "blog-list" . }}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="../css/index.css" rel="stylesheet">
-    <link href="../css/footer.css" rel="stylesheet">
-    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
 
     <script 
       src="https://unpkg.com/htmx.org@1.9.12" 
@@ -22,10 +22,14 @@
     <div id="root">
       {{ template "navbar" . }}  
       
-      {{ . }}
+        {{ range .Blogs }}
+          <a href="/blogs/{{ .Id }}">{{ .Name }}</a>
+        {{ end }}
 
       {{ template "footer" . }}
     </div>
   </body>
 </html>
 {{ end }}
+
+
