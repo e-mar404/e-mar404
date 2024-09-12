@@ -2,8 +2,11 @@ package main
 
 import (
 	"io"
+	"log"
 	"os"
 	"text/template"
+
+	"e-mar404/website/server/blog"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
@@ -37,6 +40,7 @@ func main() {
 
   e.Static("/css", "css")
   e.Static("/images", "images")
+  e.Static("blog", "blog")
 
   e.Renderer = NewTemplate() 
 
@@ -46,5 +50,21 @@ func main() {
     return c.Render(200, "home", page)
   })
 
-  e.Logger.Fatal(e.Start(":" + os.Getenv("PORT")))
+  e.GET("/blog", func (c echo.Context) error {
+    html, err := blog.BlogHtml()
+    if err != nil {
+      log.Fatal(err)
+    }
+
+    return c.Render(200, "blog", string(html)) 
+  })
+
+  port := ":42069"
+  envPort := os.Getenv("PORT")
+
+  if envPort != "" {
+      port = envPort
+  }
+
+  e.Logger.Fatal(e.Start(port))
 }

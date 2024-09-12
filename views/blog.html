@@ -1,11 +1,17 @@
-{{ block "index" . }}
+{{ block "blog" . }}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Emilio Marin</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/index.css" rel="stylesheet">
+
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+
     <script 
       src="https://unpkg.com/htmx.org@1.9.12" 
       integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" 
@@ -14,7 +20,14 @@
   </head>
 
   <body>
-    <div class="init">Init htmx</div>
+    <!-- TODO: look at oob to update root -->
+    <div id="root">
+      {{ template "navbar" . }}  
+      
+      {{ . }}
+
+      {{ template "footer" . }}
+    </div>
   </body>
 </html>
 {{ end }}

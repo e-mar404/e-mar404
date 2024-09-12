@@ -13,7 +13,7 @@ tmp_dir = "tmp"
   exclude_unchanged = false
   follow_symlink = false
   full_bin = ""
-  include_dir = ["server", "views", "pkg"]
+  include_dir = ["server", "views", "pkg", "blog"]
   include_ext = ["go", "html"]
   include_file = []
   kill_delay = "0s"
@@ -24,6 +24,7 @@ tmp_dir = "tmp"
   rerun_delay = 500
   send_interrupt = false
   stop_on_error = false
+  env_file=".env"
 
 [color]
   app = ""
