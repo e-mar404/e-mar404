@@ -11,7 +11,7 @@ primary_region = 'dfw'
     GO_VERSION = '1.22.1'
 
 [env]
-  PORT = '6969'
+  PORT = ':6969'
 
 [http_service]
   internal_port = 6969 
