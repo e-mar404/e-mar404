@@ -1,5 +1,7 @@
 # This is the second blog
 
+*last edited on: 09/12/2024*
+
 ## How am i going to support multiple blogs
 
 I am thinking of instead of storing the blog md files in a db to just use the file system since that seems more fit for the scale of 1 user (me) a month
