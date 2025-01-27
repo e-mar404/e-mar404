@@ -33,6 +33,7 @@ func main() {
   e.Static("/css", "css")
   e.Static("/images", "images")
   e.Static("/blog", "blog")
+	e.Static("/files", "files")
 
   e.Renderer = NewTemplate() 
 
