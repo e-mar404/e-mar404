@@ -1,15 +1,16 @@
-# Why I'm Learning Elixir
+# Elixir as a Hobby & Go as a Career
 
-Why im writing about this:
+As any new CS grad knows, the job market has been pretty rough. This has made
+me obsesively look at job postings an see the dreaded "2+ years of in the job 
+experience" for an entry level job and not know where to get started breaking
+through and getting that first job.
 
-- it feels weird to be a jr dev that does not yet have a job in the software
-  developer industry (Sys admin) and learning elixir, makes me feel im making my
-  self not "job marketable"
+TODO: link venkats twitter
 
-- stuck in a loop of "looking at job reqs" -> "i should learn the technologies
-  they prefer" -> "i divide my attention too thin and not learn anything" -> 
-  "I get burnout and stop coding for a while" -> "get worried about jobs" -> 
-  start all over again
+During my last semester in uni my programming languages professor (Dr. Venkat
+Subramaniam) ... (talk about how i found joy in the simplistic and fp,
+specifically mention the dsl assignment and each assignment having 2-3 different
+programming languages)
 
 - this is what i find fun, ever since learning about erlang i found fp very
   fascinating
