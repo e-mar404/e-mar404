@@ -1,7 +1,6 @@
 # Elixir as a Hobby & Go as a Career
 
 Last edited: 03/21/2025
-================================================================================
 
 This is just a quick jot down of an observation I had recently, this is not a
 full on discovery of my thoughts.
