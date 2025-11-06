@@ -5,14 +5,13 @@ developer exploring various aspects of the developer environment and experience.
 
 ## 📝 Planned Projects:
 
-- Concurrent multiplayer game with elixir
+- cli interface for spotify
 - Static website using the [Hugo](https://github.com/gohugoio/hugo) framework
+  for the Houston Linux User Group
+- self host a git ssh server on my proxmox server
 
-## 🌱 Learning & Growing:
-
-- Always learning new things about Neovim
-- Learning Elixir + Go for personal and work projects
-- Brushing up on Algorithms & Data Structures
+Note for future me: please do not start another project that will not be
+finished pick one up from here
 
 ## 📫 How to reach me:
 
