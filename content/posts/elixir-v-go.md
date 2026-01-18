@@ -1,6 +1,9 @@
-# Elixir as a Hobby & Go as a Career
-
-Last edited: 03/21/2025
++++
+date = 2025-03-21T00:00:00-06:00
+title = 'elixir-vs-go'
+categories = ['Comparision', 'Quick']
+draft = false
++++
 
 This is just a quick jot down of an observation I had recently, this is not a
 full on discovery of my thoughts.

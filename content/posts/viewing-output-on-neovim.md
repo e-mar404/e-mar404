@@ -1,6 +1,9 @@
-# Viewing Output of Files in Neovim
-
-*Last edited on: 10/17/2024*
++++
+date = 2024-10-17T10:32:00-06:00
+title = 'Code output in neovim'
+categories = ['Showcase']
+draft = false
++++
 
 While taking software design and programming languages courses with Dr. Venkat
 Subramaniam, I was inspired by how he used TextMate’s tooltip feature during

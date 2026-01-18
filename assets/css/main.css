@@ -1,22 +1,55 @@
 :root {
-  --base-color: #1e1e2e
+  --base-color: #1e1e2e;
+  --lavender-color: #b4befe;
+  --text-color: #cdd6f4;
+  --red-color: #f38ba8;
 }
 
 #root {
+  font-family: "Fira Code", monospace;
   background-color: var(--base-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
+  margin: 0;
 }
 
 header {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
 #logo {
-  width: 100vw;
+  width: 95%;
+  max-height: 300px;
 }
 
+main {
+  width: 98%;
+  height: 100%;
+  margin: 10px;
+  border: 2px solid var(--lavender-color);
+  border-radius: 10px;
+}
+
+nav {
+  max-width: 33%;
+  height: 100%;
+}
+
+.file-tree {
+  color: var(--text-color);
+  list-style: none;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid var(--lavender-color);
+  border-radius: 10px;
+}
+
+.file-tree-item:hover {
+  color: var(--red-color);
+}
