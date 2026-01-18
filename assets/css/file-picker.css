@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   border: 2px solid var(--lavender-color);
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 10px 10px 10px 0px;
   padding: 5px
 }
