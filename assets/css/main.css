@@ -3,10 +3,12 @@
   --lavender-color: #b4befe;
   --text-color: #cdd6f4;
   --red-color: #f38ba8;
+  --green-color: #a6e3a1;
 }
 
 #root {
   font-family: "Fira Code", monospace;
+  color: var(--text-color);
   background-color: var(--base-color);
   display: flex;
   flex-direction: column;
@@ -29,6 +31,9 @@ header {
 }
 
 main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 98%;
   height: 100%;
   margin: 10px;
@@ -37,12 +42,11 @@ main {
 }
 
 nav {
-  max-width: 33%;
+  min-width: fit-content;
   height: 100%;
 }
 
 .file-tree {
-  color: var(--text-color);
   list-style: none;
   margin: 10px;
   padding: 5px;
@@ -50,6 +54,34 @@ nav {
   border-radius: 10px;
 }
 
+.file-tree-link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.directory {
+  color: var(--green-color)
+}
+
 .file-tree-item:hover {
+  color: var(--red-color);
+}
+
+.file-picker {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid var(--lavender-color);
+  border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  padding: 5px
+}
+
+.file-picker-item {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.file-picker-item:hover {
   color: var(--red-color);
 }

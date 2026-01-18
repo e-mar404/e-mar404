@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+{{ partial "navbar" . }}
+
+<div class="file-picker">
+  {{ range .Pages }}
+    <a class="file-picker-item" href="{{ .RelPermalink }}">
+      <p>{{ .LinkTitle }}</p>
+    </a>
+  {{ end }}
+</div>
+{{ end }}
