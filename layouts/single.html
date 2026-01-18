@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+{{ partial "navbar" . }}
+
+<div class="article-view">
+  <h1>{{ .LinkTitle }}</h1>
+
+  {{ .Content }}
+</div>
+
+{{ end }}

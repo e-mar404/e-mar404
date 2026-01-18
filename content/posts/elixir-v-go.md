@@ -1,6 +1,6 @@
 +++
 date = 2025-03-21T00:00:00-06:00
-title = 'elixir-vs-go'
+title = 'Elixir vs Go'
 categories = ['Comparision', 'Quick']
 draft = false
 +++

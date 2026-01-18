@@ -3,6 +3,16 @@
 
 <title>PBD - Dev Blog</title>
 
+<!-- TODO: This is horrible pls fix -->
+{{ with resources.Get "css/single.css" }} 
+  <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }} 
+{{ with resources.Get "css/file-picker.css" }} 
+  <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }} 
+{{ with resources.Get "css/file-tree.css" }} 
+  <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }} 
 {{ with resources.Get "css/main.css" }} 
   <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{ end }} 

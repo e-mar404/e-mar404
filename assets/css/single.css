@@ -1,0 +1,9 @@
+.article-view {
+  height: -webkit-fill-available; 
+  max-width: 80%;
+  margin: 10px;
+  padding: 10px;
+  overflow-y: auto;
+  border: 2px solid var(--lavender-color);
+  border-radius: 10px;
+}
