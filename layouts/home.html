@@ -1,5 +1,9 @@
 {{ define "main" }}
 
-{{ partial "navbar" }}
+{{ partial "navbar" . }}
+
+<div class="content-view">
+  {{ .Content }}
+</div>
 
 {{ end }}

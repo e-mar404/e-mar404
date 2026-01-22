@@ -43,6 +43,7 @@ header {
 main {
   display: flex;
   flex-direction: row;
+  flex: 1;
   justify-content: center;
   align-items: center;
   min-height: 0;
@@ -52,4 +53,16 @@ main {
   margin: 10px;
   border: 2px solid var(--lavender-color);
   border-radius: 10px;
+}
+
+.content-view {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border: 2px solid var(--lavender-color);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  height: -webkit-fill-available;
+  overflow-y: auto;
 }

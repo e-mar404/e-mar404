@@ -1,11 +1,14 @@
 .file-picker {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  height: -webkit-fill-available;
   width: 100%;
   border: 2px solid var(--lavender-color);
   border-radius: 10px;
-  margin: 10px 10px 10px 0px;
-  padding: 5px
+  margin: 5px;
+  padding: 10px;
+  overflow-y: auto;
 }
 
 .file-picker-link {
