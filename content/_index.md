@@ -12,7 +12,7 @@ Neovim, Go, productivity systems, and command line tooling. I enjoy
 understanding *how things work*, even when that means being confused for a 
 while.
 
-Read more [about me](/about-me) and the tech I use!
+Read more [about me](/about-me) and the tech I use as well as my [posts](/posts)!
 
 ## Why This Site?
 

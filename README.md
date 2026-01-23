@@ -55,9 +55,9 @@ Components:
     - [x] either port over old home page or make a new home page
     - [x] decide if I will be putting a pic of me or not (no)
     - [ ] make logo point back to the home page
-    - [ ] should this have the most recent blog? nah just a link to the posts
+    - [x] should this have the most recent blog? nah just a link to the posts
       page
-    - [ ] make content-view have a max-width (prob in pixels since 80% will be
+    - [x] make content-view have a max-width (prob in pixels since 80% will be
       too much on wide screens)
 
 - **misc files**:

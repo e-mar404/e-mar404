@@ -20,12 +20,10 @@ nav {
   color: var(--green-color)
 }
 
-.directory:hover {
+.file-tree-item:hover > * {
   color: var(--red-color);
 }
-
 
 .file-tree-item:hover {
   color: var(--red-color);
 }
-
