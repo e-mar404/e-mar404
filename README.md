@@ -49,8 +49,7 @@ Components:
       think it will be useful, cool idea but not too useful yet.
 
 - **single page**:
-    - [ ] add next and prev buttons to cycle through blogs
-    - [ ] add breadcrumbs for 
+    - [x] add next and prev buttons to cycle through blogs
 
 - **about-me**:
     - [ ] write about me ig
@@ -80,4 +79,5 @@ Components:
     - [ ] make sure that the names of the files are okay and understandable for
       the future
     - [ ] global header styling 
-    - [x] global link styling
+    - [ ] global link styling (if it is a link to another part of the website
+      then that one can just replace the tab if not then target _blank)

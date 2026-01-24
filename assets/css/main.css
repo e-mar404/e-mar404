@@ -82,3 +82,10 @@ a:hover {
   color: var(--red-color);
   background-color: var(--overlay-0-color);
 }
+
+.post-navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
