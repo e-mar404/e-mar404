@@ -94,3 +94,27 @@ a:hover {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+.h1-link {
+  color: var(--red-color);
+}
+
+.h2-link {
+  color: var(--peach-color);
+}
+
+.h3-link {
+  color: var(--green-color);
+}
+
+.h4-link {
+  color: var(--blue-color);
+}
+
+.h5-link {
+  color: var(--lavender-color);
+}
+
+.h6-link {
+  color: var(--lavender-color);
+}

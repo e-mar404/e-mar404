@@ -3,17 +3,9 @@
 
 <title>PBD - Dev Blog</title>
 
-<!-- TODO: This is horrible pls fix -->
-{{ with resources.Get "css/file-picker.css" }} 
-  <link rel="stylesheet" href="{{ .RelPermalink }}">
-{{ end }} 
-{{ with resources.Get "css/file-tree.css" }} 
-  <link rel="stylesheet" href="{{ .RelPermalink }}">
-{{ end }} 
-{{ with resources.Get "css/main.css" }} 
-  <link rel="stylesheet" href="{{ .RelPermalink }}">
-{{ end }} 
-
+{{ $bundle := resources.Match "css/**.css" | resources.Concat "css/bundle.css" }}
+<link rel="stylesheet" href="{{ $bundle.RelPermalink }}">
+  
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">

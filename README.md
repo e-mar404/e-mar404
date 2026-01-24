@@ -76,9 +76,9 @@ Components:
     - [x] should I add a footer? idk what to put there so no
 
 - **css**:
-    - [ ] use a range for adding css files to the head of the html
-    - [ ] make sure that the names of the files are okay and understandable for
-      the future
-    - [ ] global header styling (cool if headers could keep the #)
-    - [ ] global link styling (if it is a link to another part of the website
+    - [x] use a range for adding css files to the head of the html
+    - [x] make sure that the names of the files are okay and understandable for
+      the future (ngl idk what I meant with this)
+    - [x] global header styling (cool if headers could keep the #)
+    - [x] global link styling (if it is a link to another part of the website
       then that one can just replace the tab if not then target _blank)
