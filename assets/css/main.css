@@ -1,8 +1,9 @@
 :root {
   --base-color: #1e1e2e;
   --overlay-0-color: #6c7086;
-  --lavender-color: #b4befe;
   --text-color: #cdd6f4;
+  --blue-color: #89b4fa;
+  --lavender-color: #b4befe;
   --peach-color: #fab387;
   --red-color: #f38ba8;
   --green-color: #a6e3a1;
@@ -63,7 +64,7 @@ main {
 
 .content-view {
   display: flex;
-  flex: 1;
+  flex: 4;
   flex-direction: column;
   align-items: center;
   border: 2px solid var(--lavender-color);

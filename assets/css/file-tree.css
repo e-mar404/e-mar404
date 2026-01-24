@@ -1,5 +1,5 @@
 nav {
-  min-width: fit-content;
+  flex: 1;
   height: 100%;
 }
 
@@ -25,5 +25,18 @@ nav {
 }
 
 .file-tree-item:hover {
+  color: var(--red-color);
+  background-color: var(--overlay-0-color);
+}
+
+#file-tree-home {
+  color: var(--red-color);
+}
+
+.file-tree-file {
+  color: var(--blue-color);
+}
+
+.file-tree-symlink {
   color: var(--red-color);
 }

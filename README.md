@@ -24,12 +24,12 @@ finished pick one up
 Components:
 
 - **navbar**:
-    - [ ] add dropdown for posts 
-    - [ ] add sub directories for topics
-    - [ ] home folder should be red (or maybe pink)
+    - [x] add dropdown for posts (no, there will be way too many files)
+    - [ ] add sub directories for topics (this one can be a drop down)
+    - [x] home folder should be red (or maybe pink)
     - [ ] topics link should take to a list of topics
     - [ ] about-me.md and all "files" should be blue
-    - [ ] hover "animation" should be similar to file picker (background color)
+    - [x] hover "animation" should be similar to file picker (background color)
     - [ ] make navbar take up rest of vertical space
     - [ ] highlight current place (prob pass a parameter to the partial when
       calling it)
@@ -66,10 +66,11 @@ Components:
       too much on wide screens)
 
 - **misc files**:
-    - [ ] add resume file to navbar
-    - [ ] add "symlink" for email
-    - [ ] add "symlink" for github
-    - [ ] decide if I want to add any other socials
+    - [x] add resume file to navbar
+    - [x] add "symlink" for email
+    - [x] add "symlink" for github
+    - [x] decide if I want to add any other socials (nah i dont have anything
+      else worth sharing yet)
     
 - **footer**:
     - [ ] should I add a footer?

@@ -1,16 +1,58 @@
 <nav>
   <ul class="file-tree">
     <a class="file-tree-link" href="/">
-      <li class="file-tree-item">~/</li>
+      <li class="file-tree-item">
+        <span id="file-tree-home">~</span>/
+      </li>
     </a>
+
     <a class="file-tree-link" href="/posts">
-      <li class="file-tree-item">|-- <span class="directory">posts/</span></li>
+      <li class="file-tree-item">|-- 
+        <span class="directory">
+          posts/
+        </span>
+      </li>
     </a>
+
     <a class="file-tree-link" href="#">
-      <li class="file-tree-item">|-- <span class="directory">topics/</span></li>
+      <li class="file-tree-item">|-- 
+        <span class="directory">
+          topics/
+        </span></li>
     </a>
+
     <a class="file-tree-link" href="/about-me">
-      <li class="file-tree-item">|-- about-me.md</li>
+      <li class="file-tree-item">|-- 
+        <span class="file-tree-file">
+          about-me.md
+        </span>
+      </li>
     </a>
+
+    <a class="file-tree-link" href="mailto:egmarinn@gmail.com">
+      <li class="file-tree-item">
+        |-- email -> <span class="file-tree-symlink">
+          egmarinn@gmail.com
+        </span>
+      </li>
+    </a>
+
+    <a class="file-tree-link" href="https://github.com/e-mar404" target="_blank">
+      <li class="file-tree-item">
+        |-- github -> <span class="file-tree-symlink">
+          https://github.com/e-mar404
+        </span>
+      </li>
+    </a>
+
+    {{ with resources.Get "files/emilio-marin-resume.pdf" }} 
+    <a class="file-tree-link" href="{{ .RelPermalink }} " download>
+        <li class="file-tree-item">
+          |-- <span class="file-tree-file">
+            resume.pdf
+          </span>
+        </li>
+      </a>
+    {{ end }}
   </ul>
 </nav>
