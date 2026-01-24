@@ -25,7 +25,7 @@ Components:
 
 - **navbar**:
     - [ ] add dropdown for posts 
-    - [ ] add dub directories for topics
+    - [ ] add sub directories for topics
     - [ ] home folder should be red (or maybe pink)
     - [ ] topics link should take to a list of topics
     - [ ] about-me.md and all "files" should be blue
@@ -33,8 +33,10 @@ Components:
     - [ ] make navbar take up rest of vertical space
 
 - **main content**:
-    - [ ] should be a little wider, maybe instead of 80% do 90-95% of viewport
-    - [ ] space between content and outer border should be a bit thinner
+    - [x] should be a little wider, maybe instead of 80% do 90-95% of viewport
+      (decided to do 95%)
+    - [x] space between content and outer border should be a bit thinner
+    - [x] links should open in a new tab
 
 - **list view**:
     - [ ] do a "back" (./..) button since user might have navigated from
@@ -50,6 +52,7 @@ Components:
 - **about-me**:
     - [ ] write about me ig
     - [ ] this might be too overlapping with the home page
+    - [ ] move "Why this site?" from the home page to here
 
 - **home page**:
     - [x] either port over old home page or make a new home page
@@ -73,3 +76,5 @@ Components:
     - [ ] use a range for adding css files to the head of the html
     - [ ] make sure that the names of the files are okay and understandable for
       the future
+    - [ ] global header styling 
+    - [x] global link styling

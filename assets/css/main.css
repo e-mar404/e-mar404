@@ -50,7 +50,7 @@ main {
   align-items: center;
   min-height: 0;
   max-height: 100%;
-  width: 80%;
+  width: 95%;
   padding: 10px;
   margin: 10px;
   border: 2px solid var(--lavender-color);
