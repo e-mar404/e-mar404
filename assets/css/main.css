@@ -38,6 +38,10 @@ header {
   max-width: 100%;
 }
 
+#logo-link {
+  background-color: unset;
+}
+
 #logo {
   width: 100%;
 }
