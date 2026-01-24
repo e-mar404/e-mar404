@@ -9,12 +9,14 @@ nav {
   padding: 5px;
   border: 2px solid var(--lavender-color);
   border-radius: 10px;
+  height: -webkit-fill-available;
 }
 
 .file-tree-link {
   color: var(--text-color);
   text-decoration: none;
 }
+
 
 .directory {
   color: var(--green-color)
@@ -26,6 +28,10 @@ nav {
 
 .file-tree-item:hover {
   color: var(--red-color);
+  background-color: var(--overlay-0-color);
+}
+
+.file-tree-item.active {
   background-color: var(--overlay-0-color);
 }
 

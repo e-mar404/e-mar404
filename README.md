@@ -25,14 +25,14 @@ Components:
 
 - **navbar**:
     - [x] add dropdown for posts (no, there will be way too many files)
-    - [ ] add sub directories for topics (this one can be a drop down)
+    - [x] add sub directories for topics (this one can be a drop down)
     - [x] home folder should be red (or maybe pink)
-    - [ ] topics link should take to a list of topics
-    - [ ] about-me.md and all "files" should be blue
+    - [x] topics link should take to a list of topics
+    - [x] about-me.md and all "files" should be blue
     - [x] hover "animation" should be similar to file picker (background color)
-    - [ ] make navbar take up rest of vertical space
-    - [ ] highlight current place (prob pass a parameter to the partial when
-      calling it)
+    - [x] make navbar take up rest of vertical space
+    - [x] highlight current place (prob pass a parameter to the partial when
+      calling it) not needed just passed the page and used the linktitle
 
 - **main content**:
     - [x] should be a little wider, maybe instead of 80% do 90-95% of viewport
@@ -73,7 +73,7 @@ Components:
       else worth sharing yet)
     
 - **footer**:
-    - [ ] should I add a footer?
+    - [x] should I add a footer? idk what to put there so no
 
 - **css**:
     - [ ] use a range for adding css files to the head of the html

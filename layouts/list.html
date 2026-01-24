@@ -3,11 +3,11 @@
 {{ partial "navbar" . }}
 
 <div class="file-picker">
-  <a class="file-picker-link" href="{{ .Site.Home.RelPermalink }}">
+  <button class="file-picker-link" onclick="history.back()">
     <p class="file-picker-item">
       ./..
     </p>
-  </a>
+  </button>
     
   {{ $format := "2006 01 02" }}
 

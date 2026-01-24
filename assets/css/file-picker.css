@@ -12,6 +12,7 @@
 }
 
 .file-picker-link {
+  all: unset;
   color: var(--text-color);
   text-decoration: none;
 }
