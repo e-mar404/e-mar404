@@ -52,9 +52,9 @@ Components:
     - [x] add next and prev buttons to cycle through blogs
 
 - **about-me**:
-    - [ ] write about me ig
-    - [ ] this might be too overlapping with the home page
-    - [ ] move "Why this site?" from the home page to here
+    - [x] write about me ig
+    - [x] this might be too overlapping with the home page
+    - [x] move "Why this site?" from the home page to here
 
 - **home page**:
     - [x] either port over old home page or make a new home page
@@ -78,6 +78,6 @@ Components:
     - [ ] use a range for adding css files to the head of the html
     - [ ] make sure that the names of the files are okay and understandable for
       the future
-    - [ ] global header styling 
+    - [ ] global header styling (cool if headers could keep the #)
     - [ ] global link styling (if it is a link to another part of the website
       then that one can just replace the tab if not then target _blank)
