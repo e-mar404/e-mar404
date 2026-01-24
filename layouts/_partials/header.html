@@ -1,0 +1,7 @@
+<header>
+  <a id="logo-link" href="{{ .Site.Home.RelPermalink }}">
+    {{ with resources.Get "images/logo.png" }} 
+      <img id="logo" src="{{ .RelPermalink }}">
+    {{ end }}
+  </a>
+</header>

@@ -1,0 +1,12 @@
+baseURL = 'https://publiclybad.dev/'
+languageCode = 'en-us'
+title = 'PBD - Dev Logs'
+
+[pagination]
+  disableAliases = false
+  pagerSize = 20
+  path = 'page'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

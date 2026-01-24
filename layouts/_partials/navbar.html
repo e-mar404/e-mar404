@@ -1,0 +1,71 @@
+{{ $home := "home" }}
+{{ $posts := "Posts" }}
+{{ $categories := "Categories" }}
+{{ $aboutMe := "about-me.md" }}
+
+<nav>
+  <ul class="file-tree">
+    <a class="file-tree-link" href="/">
+      <li class="file-tree-item 
+        {{ if compare.Eq .LinkTitle $home }} active {{ end }}">
+        <span id="file-tree-home">~</span>/
+      </li>
+    </a>
+
+    <a class="file-tree-link" href="/posts">
+      <li class="file-tree-item 
+               {{ if compare.Eq .LinkTitle $posts }} active {{ end }}">
+        |-- <span class="directory"> posts/ </span>
+      </li>
+    </a>
+
+    <a class="file-tree-link" href="/categories">
+      <li class="file-tree-item 
+               {{ if compare.Eq .LinkTitle $categories }} active {{ end }}">
+        |-- <span class="directory"> categories/ </span></li>
+    </a>
+
+    {{ $curCategory := .LinkTitle | strings.ToLower }}
+    {{ range site.Taxonomies.categories.Alphabetical }}
+      <a class="file-tree-link" href="{{ .Page.RelPermalink }}">
+        <li class="file-tree-item
+           {{ if strings.Contains $curCategory .Term }} active {{ end }}">
+        |  |-- <span class="directory"> {{ .Term }}/ </span>
+        </li>
+      </a>
+    {{ end }}
+
+    <a class="file-tree-link" href="/about-me">
+      <li class="file-tree-item 
+               {{ if compare.Eq .LinkTitle $aboutMe }} active {{ end }}">
+        |-- <span class="file-tree-file"> about-me.md </span>
+      </li>
+    </a>
+
+    <a class="file-tree-link" href="mailto:egmarinn@gmail.com">
+      <li class="file-tree-item">
+        |-- email -> <span class="file-tree-symlink">
+          egmarinn@gmail.com
+        </span>
+      </li>
+    </a>
+
+    <a class="file-tree-link" href="https://github.com/e-mar404" target="_blank">
+      <li class="file-tree-item">
+        |-- github -> <span class="file-tree-symlink">
+          https://github.com/e-mar404
+        </span>
+      </li>
+    </a>
+
+    {{ with resources.Get "files/emilio-marin-resume.pdf" }} 
+    <a class="file-tree-link" href="{{ .RelPermalink }} " download>
+        <li class="file-tree-item">
+          |-- <span class="file-tree-file">
+            resume.pdf
+          </span>
+        </li>
+      </a>
+    {{ end }}
+  </ul>
+</nav>

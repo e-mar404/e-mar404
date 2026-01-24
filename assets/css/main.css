@@ -1,0 +1,120 @@
+:root {
+  --base-color: #1e1e2e;
+  --overlay-0-color: #6c7086;
+  --text-color: #cdd6f4;
+  --blue-color: #89b4fa;
+  --lavender-color: #b4befe;
+  --peach-color: #fab387;
+  --red-color: #f38ba8;
+  --green-color: #a6e3a1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  font-family: "Fira Code", monospace;
+  font-size: 1.15rem;
+  color: var(--text-color);
+  background-color: var(--base-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+#logo-link {
+  background-color: unset;
+}
+
+#logo {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: 0;
+  max-height: 100%;
+  width: 95%;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid var(--lavender-color);
+  border-radius: 10px;
+}
+
+.content-view {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--lavender-color);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  height: -webkit-fill-available;
+  overflow-y: auto;
+}
+
+.content {
+  max-width: 80%;
+}
+
+a {
+  color: var(--peach-color);
+}
+
+a:hover {
+  color: var(--red-color);
+  background-color: var(--overlay-0-color);
+}
+
+.post-navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.h1-link {
+  color: var(--red-color);
+}
+
+.h2-link {
+  color: var(--peach-color);
+}
+
+.h3-link {
+  color: var(--green-color);
+}
+
+.h4-link {
+  color: var(--blue-color);
+}
+
+.h5-link {
+  color: var(--lavender-color);
+}
+
+.h6-link {
+  color: var(--lavender-color);
+}

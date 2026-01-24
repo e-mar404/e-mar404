@@ -3,15 +3,18 @@
 👋 Hi there! I'm Emilio, a System Administrator @ [Beta Academy](https://www.betaacademy.org/) and software 
 developer exploring various aspects of the developer environment and experience. 
 
-## 📝 Planned Projects:
+## 📝 TBC (To Be Coded):
 
-- cli interface for spotify
-- Static website using the [Hugo](https://github.com/gohugoio/hugo) framework
-  for the Houston Linux User Group
-- self host a git ssh server on my proxmox server
+
+✓ Static website using the [Hugo](https://github.com/gohugoio/hugo) framework
+  for personal blog
+- Web (or mobile) app to track top items or tbd things (think extensible
+  goodreads but for anything)
+- Mobile app with an rss feed (mainly because I want to learn how to make mobile
+  apps)
 
 Note for future me: please do not start another project that will not be
-finished pick one up from here
+finished pick one up
 
 ## 📫 How to reach me:
 

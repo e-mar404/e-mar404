@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+{{ partial "navbar" . }}
+
+<div class="content-view">
+  {{ if not .CurrentSection.IsHome }}
+    {{ $pages := .CurrentSection.Pages.ByDate }}
+    
+    <div class="post-navigation">
+      {{ with $pages.Prev . }}
+      <a href="{{ .RelPermalink }}">&lt; Previous</a>
+      {{ end }}
+
+      {{ with .Site.GetPage "/posts" }} 
+      <a href="{{ .RelPermalink }}"> ./.. </a>
+      {{ end }}
+
+      {{ with $pages.Next . }}
+      <a href="{{ .RelPermalink }}">Next &gt;</a>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <div class="content">
+    <h1 class="h1-link"># {{ .LinkTitle }}</h1>
+
+    {{ .Content }}
+  </div>
+
+</div>
+
+{{ end }}
