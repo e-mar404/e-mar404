@@ -6,3 +6,7 @@ title = 'PBD - Dev Logs'
   disableAliases = false
   pagerSize = 20
   path = 'page'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
