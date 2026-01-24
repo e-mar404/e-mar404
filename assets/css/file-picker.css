@@ -25,3 +25,17 @@
   margin: 5px;
 }
 
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.page-item {
+  padding: 0.5rem;
+}
+
+.page-item.active > a {
+  color: var(--red-color);
+}

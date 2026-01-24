@@ -31,6 +31,8 @@ Components:
     - [ ] about-me.md and all "files" should be blue
     - [ ] hover "animation" should be similar to file picker (background color)
     - [ ] make navbar take up rest of vertical space
+    - [ ] highlight current place (prob pass a parameter to the partial when
+      calling it)
 
 - **main content**:
     - [x] should be a little wider, maybe instead of 80% do 90-95% of viewport
@@ -39,11 +41,12 @@ Components:
     - [x] links should open in a new tab
 
 - **list view**:
-    - [ ] do a "back" (./..) button since user might have navigated from
+    - [x] do a "back" (./..) button since user might have navigated from
       somewhere else to get to that list of blogs
-    - [ ] check if pagination is easy
-    - [ ] check how easy it would be to make a preview on hover summary (i am
-      thinking of just doing css and using `display:none`)
+    - [x] check if pagination is easy (yes it was)
+    - [x] check how easy it would be to make a preview on hover summary (i am
+      thinking of just doing css and using `display:none`) no preview i dont
+      think it will be useful, cool idea but not too useful yet.
 
 - **single page**:
     - [ ] add next and prev buttons to cycle through blogs

@@ -3,15 +3,24 @@
 {{ partial "navbar" . }}
 
 <div class="file-picker">
+  <a class="file-picker-link" href="{{ .Site.Home.RelPermalink }}">
+    <p class="file-picker-item">
+      ./..
+    </p>
+  </a>
+    
   {{ $format := "2006 01 02" }}
 
-  {{ range .Pages }}
+  {{ range .Paginator.Pages }}
     <a class="file-picker-link" href="{{ .RelPermalink }}">
       <p class="file-picker-item">
         {{ .Date | time.Format $format }} - {{ .LinkTitle }}
       </p>
     </a>
   {{ end }}
+
+  {{ partial "pagination.html" . }}
+
 </div>
 
 {{ end }}
