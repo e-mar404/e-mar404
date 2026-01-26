@@ -35,3 +35,44 @@ Topics that I want to address:
 - [ ] conclude with if I want to transition my nixos config to using flakes or
   not
 
+### Rant
+
+I thought this was supposed to just work, what happened to ending the "it works
+on my machine" syndrome.
+
+I expected to be able to run `nix develop` and be able to use the same flake
+file with literally 3 pkgs and thats it. Why am I having to debug, is this just
+some massive skill issue on my side?
+
+Errors gotten:
+
+This is with flake from `7417fd90`:
+
+```bash
+error:
+       … while evaluating the attribute 'legacyPackages.x86_64-linux'
+         at /nix/store/3p306srz83h9z9v0ma9xcxb8y8cdxkxj-source/lib/attrsets.nix:977:47:
+          976|   */
+          977|   nameValuePair = name: value: { inherit name value; };
+             |                                               ^
+          978|
+
+       … while evaluating a branch condition
+         at /nix/store/3p306srz83h9z9v0ma9xcxb8y8cdxkxj-source/pkgs/stdenv/booter.nix:107:9:
+          106|       thisStage =
+          107|         if args.__raw or false then
+             |         ^
+          108|           args'
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: error parsing derivation '/nix/store/rr4cpsx1w84h2l1h71ch8spcp221kzkr-m4-1.4.19.tar.bz2.drv': error: exp
+ected string 'D'
+```
+
+And this is when I changed the nixpkgs to use the unstable channel:
+
+```bash
+error: builder for '/nix/store/h414vl12bmgrf03asyslmw4yx0dx242w-nix-shell-env.drv' failed to produce output path for output 'out' at '/nix/store/h414vl12bmgrf03asyslmw4yx0dx242w-nix-shell-env.drv.chroot/root/nix/store/kxwmaaskhx4cb5l3jvc1yh8njdwq865b-nix-shell-env'
+```
+
