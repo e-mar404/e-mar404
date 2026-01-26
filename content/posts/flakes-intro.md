@@ -30,6 +30,8 @@ Topics that I want to address:
 - [ ] should an app/cli that can be easily installed (ie go install ..., npm
   install ...) have a flake, or should I even bother creating one?
 - [ ] Walk through for creating the flake that I use for this blog
+    - [ ] how to keep shell env
+    - [ ] what is direnv
 - [ ] conclude with if I want to transition my nixos config to using flakes or
   not
 
