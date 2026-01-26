@@ -32,6 +32,9 @@ Topics that I want to address:
 - [ ] Walk through for creating the flake that I use for this blog
     - [ ] how to keep shell env
     - [ ] what is direnv
+    - [ ] added nix icon when in nix shell (tangent on why the heck was it so
+      hard to find out if there is a good approach at knowing if you are within
+      a nix shell)
 - [ ] conclude with if I want to transition my nixos config to using flakes or
   not
 
