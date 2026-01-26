@@ -7,17 +7,23 @@
   
   outputs = { self, nixpkgs }: 
 
-  let 
-    system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
-  in
-  {
-    devShells.${system}.default = pkgs.mkShell {
-      buildInputs = with pkgs; [
-        go
-        hugo
-        gcc
+    let 
+      systems = [
+        "x86_64-linux"
+        "aarch64-linux"
+        "x86_64-darwin"
+        "aarch64-darwin"
       ];
+    in
+    {
+      devShells = nixpkgs.lib.genAttrs systems (system: 
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in {
+          default = pkgs.mkShell {
+            packages = with pkgs; [ go hugo stdenv.cc ];
+          };
+        }
+      );
     };
-  };
 }
