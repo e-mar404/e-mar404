@@ -14,7 +14,7 @@
         "x86_64-darwin"
         "aarch64-darwin"
       ];
-    in
+   in
     {
       devShells = nixpkgs.lib.genAttrs systems (system: 
         let
