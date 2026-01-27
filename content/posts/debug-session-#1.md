@@ -54,6 +54,8 @@ to the unstable channel, ran `nix develop` one more time and then I got this:
 error: builder for '/nix/store/h414vl12bmgrf03asyslmw4yx0dx242w-nix-shell-env.drv' failed to produce output path for output 'out' at '/nix/store/h414vl12bmgrf03asyslmw4yx0dx242w-nix-shell-env.drv.chroot/root/nix/store/kxwmaaskhx4cb5l3jvc1yh8njdwq865b-nix-shell-env'
 ```
 
+![yay-new-error](/images/yay-new-error.webp)
+
 After a lot of research I found that a possible cause of this is a corrupted nix 
 store. I read a bit more about the nix store and the `nix-store` cmd and it 
 turns out there is a way to repair it, great! ... Wait why did this `sudo 
