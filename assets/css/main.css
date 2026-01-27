@@ -118,3 +118,8 @@ a:hover {
 .h6-link {
   color: var(--lavender-color);
 }
+
+pre, code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
