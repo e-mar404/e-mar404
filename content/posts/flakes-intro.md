@@ -66,8 +66,67 @@ Turns out that all flakes can only have 4 top level/root attributes:
 - `nixConfig`
 
 That's easy enough to understand but actually understanding how to write a 
-flake.nix file was something else. It requires at least some knowledge of the
+`flake.nix` file was something else. It requires at least some knowledge of the
 nix programming language with functional programming as a plus.
+
+So after reading a bit about the [nix
+language](https://nix.dev/tutorials/nix-language.html) I came back to trying to build my
+nix flake. At some point I should come back and actually learn since I kind of
+just used the language basics to see what a function even looks like and very
+basic things that are needed for a flake.
+
+## so how did my flake turn out
+
+For now my `flake.nix` file looks like this:
+
+```nix
+{
+  description = "All things needed for development on this site";
+
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+  };
+  
+  outputs = { self, nixpkgs }: 
+
+    let 
+      systems = [
+        "x86_64-linux"
+        "aarch64-linux"
+        "x86_64-darwin"
+        "aarch64-darwin"
+      ];
+   in
+    {
+      devShells = nixpkgs.lib.genAttrs systems (system: 
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in {
+          default = pkgs.mkShell {
+            packages = with pkgs; [ go hugo stdenv.cc ];
+          };
+        }
+      );
+    };
+}
+```
+
+It will just go through all of the systems defined and set what packages the 
+shell needs, nothing fancy, which is why I wanted to start learning about flakes
+by creating one for development of this site.
+
+Note:
+I did run into some obstacles when trying to use this flake in another machine
+but that was a skill issue and nothing inherently wrong with the flake itself,
+which you can read about [here](/posts/debug-session-#1).
+
+If you check line :24 that's where I define packages needed to develop on the 
+repo that hosts this static site. Very few packages and I am honestly pretty 
+confident that you're able to remove `go` and `stdenv.cc` but I left them there
+for good measure since technically hugo needs go and a c compiler to install 
+hugo extended.
+
+
 
 ---
 
