@@ -119,7 +119,7 @@ by creating one for development of this site.
 
 Note: I did run into some obstacles when trying to use this flake in another
 machine but that was a skill issue and nothing inherently wrong with the flake
-itself, which you can read about [here](/posts/debug-session-%231).
+itself, which you can read about [here](/posts/debug-session-1).
 
 There is a lot more that I still have to learn about flakes but for now I will
 leave it at this. For a future time I will want to go deeper on remote flakes,
