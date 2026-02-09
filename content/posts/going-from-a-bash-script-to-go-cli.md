@@ -6,7 +6,7 @@ categories = [ 'showcase' ]
 +++
 
 ![image that has the tmux logo at the top and bellow that the bash logo with an 
-arrow pointing to the go gopher]()
+arrow pointing to the go gopher](/images/from-bash-to-go.png)
 
 I have been using a [tmux bash
 script](https://github.com/ThePrimeagen/tmux-sessionizer) from a popular
@@ -34,7 +34,7 @@ If I want to make a program that will manage links based on directory seems like
 then it sounds like the job has outgrown a simple bash script and will need
 something a little more fitting to the need, go.
 
-![bash logo with a tear]()
+![bash logo with a tear](/images/bash-cry.png)
 
 I set a road map for myself on how I should develop the app. It will consist of
 3 stages:
