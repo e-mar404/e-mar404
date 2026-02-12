@@ -1,8 +1,7 @@
 +++
 date = '2026-02-08T17:19:33-06:00'
-draft = true
 title = 'going from a bash script to go cli'
-categories = [ 'showcase' ]
+categories = [ 'showcase', 'golang']
 +++
 
 ![image that has the tmux logo at the top and bellow that the bash logo with an 
@@ -10,7 +9,8 @@ arrow pointing to the go gopher](/images/from-bash-to-go.png)
 
 I have been using a [tmux bash
 script](https://github.com/ThePrimeagen/tmux-sessionizer) from a popular
-programming twitch streamer for a while now and it has been great so far.
+programming twitch streamer for a while now and it has been great so far. So to
+[@ThePrimeagen](https://x.com/ThePrimeagen).
 
 It lets me start a tmux session in any directory within the search path I set
 from the find command at the top of the script. It was working great for me
@@ -30,16 +30,14 @@ So if I don't want to be a tab hoarder and have multiple devices that I develop
 on what should I do? Of course I get to write a program that will bookmark links 
 based on what directory I am in.
 
-If I want to make a program that will manage links based on directory seems like
-then it sounds like the job has outgrown a simple bash script and will need
-something a little more fitting to the need, go.
+If I want to make a program that will manage links based on directory then it
+sounds like the job has outgrown a simple bash script and will need something a
+little more fitting to the need, a go cli.
 
 ![bash logo with a tear](/images/bash-cry.png)
 
 I set a road map for myself on how I should develop the app. It will consist of
 3 stages:
-
-![graph with 3 stages]()
 
 1. port the bash script to a go cli with the same functionality
 2. add support for a configuration file to manage search paths, ignore paths,
@@ -47,11 +45,13 @@ and logic to be ran after a tmux session is started
 3. enable saving of bookmarks based on directory to sqlite to enable
 reproducible functionality across machines with syncthing
 
-For now I have finished the first step and here is a quick video showcase of it.
+For now I have finished the first step and here is a quick screenshot of how the
+"fuzzy finding" looks like.
 
-![video of me using the tsesh cli]()
+![screenshot of tsesh directory list](/images/tsesh-dir-list.png)
 
-The cli was built in go using the charm bubble tea tui library. For now it just
-has a 1:1 feature parity with how I used to use the bash script, with some
-testing, so it doesn't do anything too exciting yet, so stick around to see me
-add my custom functionality soon!
+The cli was built in go using the charm bubble tea tui library and it is called
+[tsesh](https://github.com/e-mar404/tsesh.git). For now it just has a 1:1
+feature parity with how I used to use the bash script, with some testing, so it
+doesn't do anything too exciting yet, so stick around to see me add my custom
+functionality soon!

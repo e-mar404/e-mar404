@@ -73,6 +73,7 @@ main {
   margin: 5px;
   padding: 10px;
   height: -webkit-fill-available;
+  width: 100%;
   overflow-y: auto;
 }
 
@@ -87,6 +88,10 @@ a {
 a:hover {
   color: var(--red-color);
   background-color: var(--overlay-0-color);
+}
+
+img {
+  max-width: 100%;
 }
 
 .post-navigation {
