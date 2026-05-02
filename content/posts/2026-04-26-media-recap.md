@@ -1,6 +1,5 @@
 +++
-date = '2026-05-01T09:25:28-05:00'
-draft = true
+date = '2026-05-02'
 title = 'GitHub On The Spotlight'
 categories = ['weekly-recap']
 tags = ['github', 'neovim']
@@ -9,10 +8,10 @@ tags = ['github', 'neovim']
 ### Week of [Apr 26 - May 02]
 
 Recently I saw a LinkedIn post by
-[@noelcodes](https://www.linkedin.com/in/noelcodes/) where he mentioned getting
-a bunch of articles and then reading them all on Sunday. Seeing him share all
-his thoughts on the articles he read gave me the motivation to start writing
-weekly recaps on the articles and videos I watch. 
+[@noelcodes](https://www.linkedin.com/in/noelcodes/) where he mentioned that he
+gathers a bunch of articles on Saturday and then reads them all on Sunday.
+Seeing him share all his thoughts on the articles he read gave me the motivation
+to start writing weekly recaps on the articles and videos I watch. 
 
 I find myself struggling to recall significant points from media a few days
 after  consuming it. This way I am able to read and watch with the purpose of
@@ -25,43 +24,45 @@ a recap about a recap, but I encourage you to check out his
 to me the most this week ...
 
 ## Should Neovim support transitive plugin dependencies?  
-Justin M. Keys [^1]
+[Blog by Justin M. Keys](https://sink.io/jmk/neovim-plugin-deps/)
 
 I came across this blog post while transferring my lazynvim config to just  use
 `vim.pack`. 
 
 There were 3 key points that I took away from this read:
 
-1. Dependencies WILL introduce risks, but there will be different risks
+1. Dependencies *WILL* introduce risks, but there will be different risks
 depending on how you connect the source to those dependencies. If you vendor in
 dependencies you risk zero days. If you use a dependency manager like a package
 manager, you risk supply chain attacks
 
-2. There are ways to mitigate this. One such way is by including a great and
-well rounded standard library, examples given were golang and the goal of stdlib
-in neovim. Another is to make dependencies "hard" to manage, either artificially
-or by design. This way there will be more thought put into having dependencies
+2. There are ways to mitigate the risks that dependencies bring. One such way is
+by including a great and well rounded standard library, examples given were
+golang and the goal of stdlib in neovim. Another is to make dependencies "hard"
+to manage, either artificially or by design. This way there will be more thought
+put into having dependencies
 
 3. This was not an argument in the blog, but I am starting to believe that we
-should roll our own x. Especially if it is the core of what makes your product,
-project, or company stand out. I am bringing in this mindset by rewriting my
-neovim config to use as few plugins and 3rd party configurations as possible.  I
-took the first step by not using a plugin manager
+should roll our own *x* a lot more than we do now. Especially if it is the core
+of what makes your product, project, or company stand out. I am introducing this
+mindset into my own work by rewriting my neovim config to use as few plugins and
+3rd party configurations as possible.  I took the first step by not using a
+plugin manager
 
 ---
 
-This next section will be all about GitHub just due to how much it came up in my
-feed and the cultural significance that all the issues they are facing have on
-the developer community.
+This next section will be all about ✨GitHub✨. Mainly due to how much it came
+up in my feed, and the cultural significance that all the issues they are
+causing have on the developer community.
 
 ---
 
 ## Ghostty Is Leaving GitHub  
-Mitchell Hashimoto [^2]
+[Blog by Mitchell Hashimoto](https://mitchellh.com/writing/ghostty-leaving-github)
 
 This was a short read on how Mitchell feels about GitHub and how he is taking
 Ghostty out of GitHub. He doesn't mention where the project will go, but if I
-were to guess I would say Codeberg, similar to the  Zig project[^3].
+were to guess I would say Codeberg, similar to the  Zig project[^1].
 
 Quick takeaways:
 
@@ -70,21 +71,21 @@ Quick takeaways:
 - He is not the only one that I saw this week complaining and mentioning how
   disappointed they were in GitHub. In most of the posts I've read, there is
   this underlying tone that they still want GitHub to succeed. This is the place
-  where Hashimoto and so many others found the wonders of open source. This is a
-  place that has so many developers rooting for its success
+  where Hashimoto and so many others found the wonders of open source, but even
+  their day 1 supporters are turning their backs towards GitHub. 
 - Him mentioning that his personal projects are going to stay on GitHub makes me
   think of this weird alternative timeline future. A future where GitHub is the
   coding playground where you point all your AI projects and automated AI bots
   to save their work. And we use some other service for real work that  has a
-  clear vision and direction and takes performance and uptime seriously[^4]
+  clear vision and direction which takes performance and uptime seriously[^2]
 
 Since this was a very heavy GitHub week I'll put here other resources  that I
-found interesting on the topic. [^5] [^6]
+found interesting on the topic. [^3] [^4]
 
 ---
 
 ## Open Source Friday with Mitchell Hashimoto  
-GitHub[^7]
+[Interview hosted by GitHub](https://www.youtube.com/watch?v=0npMvuh7qNc)
 
 It is kind of ironic that I found this the same week as his article mentioned
 above. Throughout the interview, which was only 2 months ago, you can tell there
@@ -95,7 +96,7 @@ oh wait ... there is no CEO. Well,  anyways that was not the point of this video
 and there were some really good  takeaways.
 
 A huge part of the talk, if not all of it, was about how a project as big and as
-popular as Ghostty[^8] is dealing with the new age of AI contributions. He
+popular as Ghostty[^5] is dealing with the new age of AI contributions. He
 brought up an interesting point on how AI is little by little getting rid of his
 humanity. There were a few specific situations where he was harsher than he
 would have been prior to AI and closed down pull requests that seemed purely AI
@@ -105,20 +106,17 @@ PR and genuinely wanted to help.
 This could 100% be the new harsh and unwelcoming environment for new developers
 that early Stack Overflow used to be. Instead of closing down questions with
 "duplicate", "off topic", or the well known "RTFM", PRs will now be closed  with
-"AI slop".
+"AI slop". 
 
-It is commonly said that even a slight barrier to entry hugely increases the
-quality of the help, contributions, and learning. I think Hashimoto's vouch [^9]
-project that he mentions in the YouTube video is bringing back the old barrier
-to entry that a pull request used to bring. 
+I am a believer that a slight barrier to entry hugely increases the quality of
+the help, contributions, AND learning. I think Hashimoto's vouch [^6] project
+that he mentions in the YouTube video is bringing back the old barrier to entry
+that a pull request used to bring in a good way.
 
 
-[^1]: https://sink.io/jmk/neovim-plugin-deps/ 
-[^2]: https://mitchellh.com/writing/ghostty-leaving-github
-[^3]: https://codeberg.org/ziglang/zig
-[^4]: https://mrshu.github.io/github-statuses/
-[^5]: https://www.youtube.com/watch?v=R7ex-Gt8dtw&t=1828s
-[^6]: https://www.bookstackapp.com/blog/project-migrated-to-codeberg/
-[^7]: https://www.youtube.com/watch?v=0npMvuh7qNc
-[^8]: https://ghostty.org/
-[^9]: https://github.com/mitchellh/vouch
+[^1]: https://codeberg.org/ziglang/zig
+[^2]: https://mrshu.github.io/github-statuses/
+[^3]: https://www.youtube.com/watch?v=R7ex-Gt8dtw&t=1828s
+[^4]: https://www.bookstackapp.com/blog/project-migrated-to-codeberg/
+[^5]: https://ghostty.org/
+[^6]: https://github.com/mitchellh/vouch
