@@ -1,7 +1,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Emilio Marin - Building in public or something like that"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://publiclybad.dev"/>
+{{ with resources.Get "images/title-card.jpeg" }} 
+  <meta property="og:image" content="{{ .RelPermalink }}"/>
+{{ end }}
+
 
 <title>PBD - Dev Blog</title>
+
 
 {{ $bundle := resources.Match "css/**.css" | resources.Concat "css/bundle.css" }}
 <link rel="stylesheet" href="{{ $bundle.RelPermalink }}">
@@ -9,6 +17,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+{{ with resources.Get "images/favicon.png" }} 
+<link rel="icon" type="image/x-icon" href="{{ .RelPermalink }}">
+{{ end }}
 
 {{ $js := resources.Get "js/index.js" }}
 <script src="{{ $js.RelPermalink }}" defer></script>
