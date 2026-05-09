@@ -27,11 +27,11 @@
           |-- <span class="directory"> categories/ </span></li>
       </a>
 
-      {{ $curCategory := .LinkTitle | strings.ToLower }}
+      {{ $curCategories := .Params.categories }}
       {{ range site.Taxonomies.categories.Alphabetical }}
         <a class="file-tree-link" href="{{ .Page.RelPermalink }}">
           <li class="file-tree-item
-             {{ if strings.Contains $curCategory .Term }} active {{ end }}">
+             {{ if or (in $curCategories .Term) (strings.Contains $.RelPermalink (print "/categories/" .Term "/")) }} active {{ end }}">
           |  |-- <span class="directory"> {{ .Term }}/ </span>
           </li>
         </a>
