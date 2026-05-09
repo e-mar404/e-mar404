@@ -1,5 +1,5 @@
 +++
-date = '2026-05-09T20:42:00-05:00'
+date = '2026-05-09'
 title = 'Educational Motivation'
 categories = ['weekly-recap']
 +++
