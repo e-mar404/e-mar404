@@ -80,10 +80,10 @@ jobs:
       - name: Build the site
         run: |
           hugo \
-            --buildFuture \ 
-            --gc \
-            --minify \
-            --cacheDir "${{ runner.temp }}/hugo_cache"
+          --buildFuture \
+          --gc \
+          --minify \
+          -- cacheDir "${{ runner.temp }}/hugo_cache"
       - name: Cache save
         id: cache-save
         uses: actions/cache/save@v5
