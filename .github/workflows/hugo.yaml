@@ -80,6 +80,7 @@ jobs:
       - name: Build the site
         run: |
           hugo \
+            -F \ 
             --gc \
             --minify \
             --cacheDir "${{ runner.temp }}/hugo_cache"
