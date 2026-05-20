@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   flex: 4;
-  height: -webkit-fill-available;
   width: 100%;
   border: 2px solid var(--lavender-color);
   border-radius: 10px;

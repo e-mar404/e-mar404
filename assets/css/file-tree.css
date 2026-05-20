@@ -1,11 +1,31 @@
 nav {
   flex: 1;
+  flex-direction: column;
+  display: flex;
   height: 100%;
+  width: 100%;
+}
+
+#logo-link {
+  background-color: unset;
+  display: flex;
+}
+
+#logo {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid var(--lavender-color);
+  border-radius: 10px;
   width: 100%;
 }
 
 summary {
   display: none;
+}
+
+details {
+  flex: 1;
+  display: flex;
 }
 
 .file-tree {
@@ -14,7 +34,8 @@ summary {
   padding: 5px;
   border: 2px solid var(--lavender-color);
   border-radius: 10px;
-  height: -webkit-fill-available;
+  height: 100%;
+  flex: 1;
 }
 
 .file-tree-link {

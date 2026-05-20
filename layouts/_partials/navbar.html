@@ -4,8 +4,15 @@
 {{ $aboutMe := "about-me.md" }}
 
 <nav>
+  <a id="logo-link" href="{{ .Site.Home.RelPermalink }}">
+    {{ with resources.Get "images/logo.svg" }} 
+    <img id="logo" src="{{ .RelPermalink }}">
+    {{ end }}
+  </a>
+
   <details open>
     <summary>file-tree</summary>
+
     <ul class="file-tree">
       <a class="file-tree-link" href="/">
         <li class="file-tree-item 
