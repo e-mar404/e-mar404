@@ -3,6 +3,7 @@
 {{ partial "navbar" . }}
 
 <div class="content-view">
+  <div class="content-border">
   {{ if not .CurrentSection.IsHome }}
     {{ $pages := .CurrentSection.Pages.ByDate }}
     
@@ -26,7 +27,7 @@
 
     {{ .Content }}
   </div>
-
+  </div>
 </div>
 
 {{ end }}

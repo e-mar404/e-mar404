@@ -46,6 +46,7 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 0;
+  width: stretch;
   padding: 10px;
   margin: 10px;
   border: 2px solid var(--lavender-color);
@@ -68,10 +69,16 @@ main {
   padding: 10px;
   border: 2px solid var(--lavender-color);
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .content {
+  margin: 5px;
+  padding: 10px;
   max-width: 80%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--overlay-0-color) transparent;
 }
 
 a {
