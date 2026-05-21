@@ -16,12 +16,9 @@ the line lol.
 
 ### OS
 
-Ok time to be insufferable. I use NixOS btw... I say this since I am already 
-running into a few issues where some pkgs are not fully updated so I might be 
-that annoying person submitting prs to update their flakes...
-
-I am planning a blog of me learning how to package stuff using nix flakes. In
-particular I am doing this to package either zen or beeper.
+Ok time to be insufferable. I use Arch btw... I say this since I am already 
+running into a few issues where some pkgs are not fully updated so I might
+venture out to create my own AUR pkgs.
 
 ## Why This Site?
 
@@ -30,14 +27,11 @@ pretending to understand things I didn't. Not sure if it was ego, fear of
 looking inexperienced/asking “dumb” questions or just being plain wrong.
 
 That fear kept me from learning as openly and effectively as I could have. Ended
-up being afraid to fail publicly *and* privately, so I did not give myself room
-to grow and get a hold of all the opportunities that I could have early on.
+up being afraid to fail publicly (*and* privately), so I did not give myself
+room to grow and get a hold of all the opportunities that I could have early on.
 
 This site is me choosing differently.
 
 Here, I’ll write openly about my projects, mistakes, experiments, and ideas as I
 work through them. Some posts will be rough. Some conclusions will be wrong but 
-that's part of the process, and the point.
-
-The name of this site and what I am going to make my online "persona" is an 
-acceptance of what I used to avoid being ... a **Publicly Bad Dev**.
+that's part of the process (and the point).
