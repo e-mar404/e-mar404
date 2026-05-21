@@ -1,6 +1,7 @@
 {{ $home := "home" }}
 {{ $posts := "Posts" }}
 {{ $categories := "Categories" }}
+{{ $tags := "Tags" }}
 {{ $aboutMe := "about-me.md" }}
 
 <nav>
@@ -25,6 +26,13 @@
         <li class="file-tree-item 
                  {{ if compare.Eq .LinkTitle $posts }} active {{ end }}">
           |-- <span class="directory"> posts/ </span>
+        </li>
+      </a>
+
+      <a class="file-tree-link" href="/tags">
+        <li class="file-tree-item 
+                 {{ if compare.Eq .LinkTitle $tags }} active {{ end }}">
+          |-- <span class="directory"> tags/ </span>
         </li>
       </a>
 

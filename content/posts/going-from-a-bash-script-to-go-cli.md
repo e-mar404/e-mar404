@@ -1,7 +1,8 @@
 +++
 date = '2026-02-08T17:19:33-06:00'
 title = 'going from a bash script to go cli'
-categories = [ 'showcase', 'golang']
+categories = ['showcase']
+tags = ['golang', 'bash', 'scripting']
 +++
 
 ![image that has the tmux logo at the top and bellow that the bash logo with an 

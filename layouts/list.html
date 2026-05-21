@@ -15,7 +15,11 @@
     {{ range .Paginator.Pages }}
       <a class="file-picker-link" href="{{ .RelPermalink }}">
         <p class="file-picker-item">
-          {{ .Date | time.Format $format }} - {{ .LinkTitle }}
+          {{ if eq .Type "posts" }}
+            {{ .Date | time.Format $format }} - 
+          {{ end }}
+
+          {{ .LinkTitle }}
         </p>
       </a>
     {{ end }}

@@ -1,8 +1,8 @@
 +++
 date = 2024-10-17T10:32:00-06:00
 title = 'Code output in neovim'
-categories = ['Showcase']
-draft = false
+categories = ['showcase']
+tags = ['neovim']
 +++
 
 While taking software design and programming languages courses with Dr. Venkat
