@@ -9,13 +9,13 @@ nav {
 #logo-link {
   background-color: unset;
   display: flex;
+  margin: 5px;
+  border: 2px solid var(--lavender-color);
+  border-radius: 10px;
 }
 
 #logo {
-  margin: 5px;
   padding: 5px;
-  border: 2px solid var(--lavender-color);
-  border-radius: 10px;
   width: 100%;
 }
 
@@ -26,14 +26,15 @@ summary {
 details {
   flex: 1;
   display: flex;
+  margin: 5px;
+  border: 2px solid var(--lavender-color);
+  border-radius: 10px;
 }
 
 .file-tree {
   list-style: none;
-  margin: 5px;
   padding: 5px;
-  border: 2px solid var(--lavender-color);
-  border-radius: 10px;
+  margin: 0;
   height: 100%;
   flex: 1;
 }
