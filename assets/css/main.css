@@ -55,15 +55,19 @@ main {
 .content-view {
   display: flex;
   flex: 4;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid var(--lavender-color);
-  border-radius: 10px;
-  margin: 5px;
-  padding: 10px;
   height: 100%;
   width: 100%;
   overflow-y: auto;
+}
+
+.content-border {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid var(--lavender-color);
+  border-radius: 10px;
 }
 
 .content {
