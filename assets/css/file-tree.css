@@ -25,6 +25,7 @@ summary {
 
 details {
   flex: 1;
+  flex-direction: column;
   display: flex;
   margin: 5px;
   border: 2px solid var(--lavender-color);
