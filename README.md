@@ -21,3 +21,17 @@ finished pick one from above
 
 - Email: egmarinn@gmail.com
 - LinkedIn: [@emiliomarin](https://www.linkedin.com/in/emilio-marin-8393a51bb/)
+
+## Website redesign todo:
+
+- [x] make the ui full screen ( no more "publicly bad dev" logo at the top)
+- [x] add a little logo on top of the 'file tree'/navbar
+- [ ] make the "file tree"/navbar fill in the empty space as well & fix offsets
+  between file-tree and logo
+- [ ] add codeberg and mastodon on my socials
+- [ ] shrink down the categories to a more broad topics
+- [ ] add tags to the blogs as '#tag' under the title that will take to a list
+  of all blog posts with the same tags
+- [ ] update the 'about-me.md' page
+
+

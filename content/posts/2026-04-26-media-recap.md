@@ -2,7 +2,7 @@
 date = '2026-05-02'
 title = 'GitHub On The Spotlight'
 categories = ['weekly-recap']
-tags = ['github', 'neovim']
+tags = ['github', 'neovim', 'opensource']
 +++
 
 ### Week of [Apr 26 - May 02]

@@ -2,7 +2,8 @@
 date = '2026-01-27T11:13:42-06:00'
 draft = false
 title = 'debug session #1'
-categories = ['nix', 'debug-session'] 
+categories = ['debug-session'] 
+tags = ['nix']
 +++
 
 If I really want to put out what I do I think I should not only be including my

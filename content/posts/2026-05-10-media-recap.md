@@ -2,6 +2,7 @@
 date = '2026-05-17'
 title = 'media recap #3'
 categories = ['weekly-recap']
+tags = ['testing', 'distributed-systems', 'free-online-resources']
 +++
 
 ### Week of May 10 - May 16

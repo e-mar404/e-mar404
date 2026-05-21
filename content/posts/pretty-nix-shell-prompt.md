@@ -2,7 +2,8 @@
 date = '2026-01-27T16:36:38-06:00'
 draft = true
 title = 'make my nix shell prompt pretty'
-categories = ['nix', 'showcase']
+categories = ['showcase']
+tags = ['nix']
 +++
 
 Now that I can just run `nix develop` I can start being a bit more picky. The

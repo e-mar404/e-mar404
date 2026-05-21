@@ -1,8 +1,8 @@
 +++
 date = 2024-09-12T23:39:00-06:00
 title = 'Personal Blog with Go'
-categories = ['Explanaition']
-draft = false
+categories = ['miscellaneous']
+tags = ['writing']
 +++
 
 

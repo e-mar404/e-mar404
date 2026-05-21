@@ -1,6 +1,21 @@
 nav {
   flex: 1;
+  flex-direction: column;
+  display: flex;
   height: 100%;
+  width: 100%;
+}
+
+#logo-link {
+  background-color: unset;
+  display: flex;
+  margin: 5px;
+  border: 2px solid var(--lavender-color);
+  border-radius: 10px;
+}
+
+#logo {
+  padding: 5px;
   width: 100%;
 }
 
@@ -8,13 +23,21 @@ summary {
   display: none;
 }
 
-.file-tree {
-  list-style: none;
+details {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
   margin: 5px;
-  padding: 5px;
   border: 2px solid var(--lavender-color);
   border-radius: 10px;
-  height: -webkit-fill-available;
+}
+
+.file-tree {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  height: 100%;
+  flex: 1;
 }
 
 .file-tree-link {

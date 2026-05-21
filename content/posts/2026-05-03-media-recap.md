@@ -2,6 +2,7 @@
 date = '2026-05-09'
 title = 'Educational Motivation'
 categories = ['weekly-recap']
+tags = ['education', 'opensource']
 +++
 
 ### Week of May 03 - May 09 

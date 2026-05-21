@@ -1,8 +1,4 @@
 @media screen and (max-width: 768px) {
-  #root {
-    height: 100dvh;
-  }
-
   main {
     flex-direction: column;
   }

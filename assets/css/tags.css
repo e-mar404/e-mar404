@@ -1,0 +1,19 @@
+.post-tags {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  color: var(--saphire-color);
+  text-decoration: none;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: var(--overlay-0-color);
+}
+
+.tag:hover {
+  color: var(--base-color);
+  background-color: var(--saphire-color);
+}
