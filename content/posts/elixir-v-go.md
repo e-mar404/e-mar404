@@ -1,8 +1,8 @@
 +++
 date = 2025-03-21T00:00:00-06:00
 title = 'Elixir vs Go'
-categories = ['Comparision', 'Quick']
-draft = false
+categories = ['comparision']
+tags = ['elixir', 'golang']
 +++
 
 This is just a quick jot down of an observation I had recently, this is not a

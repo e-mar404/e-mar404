@@ -1,7 +1,8 @@
 +++
 date = '2026-03-29T10:11:09-05:00'
 title = 'debug session #2'
-categories = ['arch', 'wayland', 'debug-session'] 
+categories = ['debug-session'] 
+tags = ['arch', 'wayland']
 +++
 
 ![myth-of-linux](/images/myth-of-linux.jpg)

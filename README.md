@@ -13,6 +13,7 @@ developer exploring various aspects of the developer environment and experience.
 - service that lets you plugin an ipod and manage the music library "remotely" 
 - look through neovim issues and see what I can pick up, or start with answering
   discussions
+- ticktick neovim plugin
 
 Note for future me: please do not start another project that will not be
 finished pick one from above

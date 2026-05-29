@@ -2,25 +2,30 @@
 
 {{ partial "navbar" . }}
 
-<div class="file-picker">
-  <button class="file-picker-link" onclick="history.back()">
-    <p class="file-picker-item">
-      ./..
-    </p>
-  </button>
-    
-  {{ $format := "2006 01 02" }}
-
-  {{ range .Paginator.Pages }}
-    <a class="file-picker-link" href="{{ .RelPermalink }}">
+<div class="file-picker-view">
+  <div class="file-picker-border">
+    <button class="file-picker-link" onclick="history.back()">
       <p class="file-picker-item">
-        {{ .Date | time.Format $format }} - {{ .LinkTitle }}
+        ./..
       </p>
-    </a>
-  {{ end }}
+    </button>
+      
+    {{ $format := "2006 01 02" }}
 
-  {{ partial "pagination.html" . }}
+    {{ range .Paginator.Pages }}
+      <a class="file-picker-link" href="{{ .RelPermalink }}">
+        <p class="file-picker-item">
+          {{ if eq .Type "posts" }}
+            {{ .Date | time.Format $format }} - 
+          {{ end }}
 
+          {{ .LinkTitle }}
+        </p>
+      </a>
+    {{ end }}
+
+    {{ partial "pagination.html" . }}
+  </div>
 </div>
 
 {{ end }}

@@ -2,7 +2,8 @@
 date = '2026-01-25T21:02:15-06:00'
 draft = false 
 title = 'microdosing on nix flakes knowledge'
-categories = ['nix', 'learning']
+categories = ['miscellaneous']
+tags = ['nix']
 +++
 
 ![nix-lambda-linux](/images/nix-lambda-linux.webp)

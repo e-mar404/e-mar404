@@ -1,14 +1,21 @@
-.file-picker {
+.file-picker-view {
   display: flex;
   flex-direction: column;
   flex: 4;
-  height: -webkit-fill-available;
+  height: 100%;
   width: 100%;
-  border: 2px solid var(--lavender-color);
-  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.file-picker-border {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
   margin: 5px;
   padding: 10px;
-  overflow-y: auto;
+  border: 2px solid var(--lavender-color);
+  border-radius: 10px;
+
 }
 
 .file-picker-link {
