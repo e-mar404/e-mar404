@@ -50,9 +50,31 @@ that many interesting new things.
 [Podcast by WVFRM](https://www.youtube.com/watch?v=BA-CE2hAIeY)
 
 This deserves its own spot and should not be lumped into the previous Google I/O
-section since that was just the title of the podcast and there are other topics
-other than just Google I/O.
+section since that was just the title of the podcast and I want to focus on the
+first topic, before they introduced Google I/O. 
 
+**HDR Crashout**:
+
+I cannot believe that the sony team looked at the post and actually thought it
+was fine to post.
+
+{{< instagram DYUE4XNiOuA >}}
+
+The AI Assistant pictures all look so much worse. I don't think there is much to
+say other than just showing the post is more than enough.
+
+They do bring up a good point explaining why  younger generations are seeking
+older technology which was considered "worse" not too long ago. The argument for
+wanting to use older digicams was that there was actually contrast and not
+everything was a mid tone with well performing social media HDR pictures.
+
+This can also be seen in the renewed interest in older technologies like vinyl,
+MP3 players, and film. Part of their appeal comes from the slower and less
+convenient experience, which made the activity feel more meaningful. Modern
+versions try to recreate that feeling while making the experience easier and
+faster to consume for the general population. Having the convenient consumption
+of the general population be the north star is how you get enshittification, and
+at the extremes, the pictures posted for the new Xperia promo.
 
 
 [^1]: https://www.youtube.com/live/aqmpZocmR8o?si=31PhZaB_ZYU8OZ7F&t=469
